@@ -12,6 +12,21 @@ public class Main {
    
    while (nbredessai<10){
        System.out.println("essaie");
+        int valeur = scanner.nextInt();
+       if (valeur == nbre){
+           verdict = true;
+           break;  }
+           else if(valeur < nbre){
+               System.out.println("le nombre est petit");
+           } else {
+               System.out.println("le nombre est grand");
+           }
+       }
+   if (verdict){
+       System.out.println("bravo le nombre est correct");
+   }else{
+       System.out.println("dommage");
    }
-    }
-}
+   }
+   } 
+    
